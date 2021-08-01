@@ -1,22 +1,29 @@
 import React, { useState } from "react";
-import styles from "./Card.module.scss";
-
-const Card = (props) => {
+import styles from "./CardDetail.module.scss";
+const CardDetail = (props) => {
   const {
     cost_in_credits: price,
     manufacturer,
     imageUrl = "https://i.ebayimg.com/images/g/bmMAAOSwMc5gdhgh/s-l1600.jpg",
-    favorited = false,
+    favorited = true,
+    cargo_capacity,
+    consumables,
+    crew,
+    hyperdrive_rating,
+    length,
+    name,
+    passengers,
+    starship_class,
   } = props.item;
- 
-  const onAddToFavorite = props.onAddToFavorite
 
+  const onAddToFavorite = props.onAddToFavorite;
   const [isFavorite, setIsFavorite] = useState(favorited);
 
   const onClickFavorite = () => {
     setIsFavorite(!isFavorite);
-    onAddToFavorite(props.item)
+    onAddToFavorite(props.item);
   };
+
 
   return (
     <div className={styles.card}>
@@ -26,16 +33,20 @@ const Card = (props) => {
           alt="Unliked"
         />
       </div>
-      <img width={133} height={112} src={imageUrl} alt="starships" />
+      <img width={103} height={82} src={imageUrl} alt="starships" />
       <h5>{manufacturer}</h5>
       <div className="d-flex justify-between align-center">
         <div className="d-flex flex-column">
           <span>Стоимость:</span>
-          <b>{price === "unknown" || price === undefined ? "Не продается" : `${price} USD`} </b>
+          <b>
+            {price === "unknown" || price === undefined
+              ? "Не продается"
+              : `${price} USD`}{" "}
+          </b>
         </div>
       </div>
     </div>
   );
 };
 
-export default Card;
+export default CardDetail;

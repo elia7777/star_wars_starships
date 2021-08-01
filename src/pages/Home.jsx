@@ -1,7 +1,7 @@
 import React from "react";
 import Card from "../components/Card/Card";
 
-const Home = ({ starships }) => {
+const Home = ({ starships, onAddToFavorite }) => {
   return (
     <div className="content p-40">
       <div className="d-flex align-center justify-between mb-40">
@@ -9,9 +9,9 @@ const Home = ({ starships }) => {
       </div>
 
       <div className="d-flex flex-wrap ">
-        {starships.map((item, index) => (
-          <Card key={item.name} {...item} />
-        ))}
+        {starships.length ? (starships.map((item) => (
+          <Card key={item.name} item={item} onAddToFavorite={onAddToFavorite} />
+        ))) : ( <p>Loading...</p> )}
       </div>
     </div>
   );
