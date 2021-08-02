@@ -11,7 +11,7 @@ const Card = (props) => {
     imageUrl = "https://i.ebayimg.com/images/g/bmMAAOSwMc5gdhgh/s-l1600.jpg",
     favorited = false,
   } = props;
-  
+
   const loading = props.loading;
   const {onAddToFavorite} = useContext(AppContext)
   

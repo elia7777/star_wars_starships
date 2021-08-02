@@ -3,8 +3,7 @@ import RowTable from "../components/RowTable/RowTable";
 import AppContext from "../context";
 
 const Favr = () => {
-  const {favorites} = useContext(AppContext)
-  const {onAddToFavorite} = useContext(AppContext)
+  const { favorites, onAddToFavorite } = useContext(AppContext);
 
   return (
     <div className="content p-40">
