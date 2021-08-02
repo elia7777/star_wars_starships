@@ -1,5 +1,5 @@
 # Star wars Starships project
-## github page link: https://elia7777.github.io/star_wars_starships/#/
+### github page link: https://elia7777.github.io/star_wars_starships/#/
 using API: https://swapi.dev/
 
 ## Запуск проекта ⏯
