@@ -27,7 +27,7 @@ const RowTable = (props) => {
       <td>{price === "unknown" ? "-" : price}</td>
       <td >
         <div className="d-flex justify-center delete" onClick={onClickDelete}>
-          <img src="/img/delete.svg" alt="delete" width={22} />
+          <img src="img/delete.svg" alt="delete" width={22} />
         </div>
       </td>
     </tr>
