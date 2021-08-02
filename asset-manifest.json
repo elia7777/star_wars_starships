@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/star_wars_starships/static/css/main.aaa37495.chunk.css",
+    "main.js": "/star_wars_starships/static/js/main.f396d008.chunk.js",
+    "main.js.map": "/star_wars_starships/static/js/main.f396d008.chunk.js.map",
+    "runtime-main.js": "/star_wars_starships/static/js/runtime-main.0e61938d.js",
+    "runtime-main.js.map": "/star_wars_starships/static/js/runtime-main.0e61938d.js.map",
+    "static/css/2.1cdcfe91.chunk.css": "/star_wars_starships/static/css/2.1cdcfe91.chunk.css",
+    "static/js/2.812cf639.chunk.js": "/star_wars_starships/static/js/2.812cf639.chunk.js",
+    "static/js/2.812cf639.chunk.js.map": "/star_wars_starships/static/js/2.812cf639.chunk.js.map",
+    "index.html": "/star_wars_starships/index.html",
+    "static/css/2.1cdcfe91.chunk.css.map": "/star_wars_starships/static/css/2.1cdcfe91.chunk.css.map",
+    "static/css/main.aaa37495.chunk.css.map": "/star_wars_starships/static/css/main.aaa37495.chunk.css.map",
+    "static/js/2.812cf639.chunk.js.LICENSE.txt": "/star_wars_starships/static/js/2.812cf639.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.0e61938d.js",
+    "static/css/2.1cdcfe91.chunk.css",
+    "static/js/2.812cf639.chunk.js",
+    "static/css/main.aaa37495.chunk.css",
+    "static/js/main.f396d008.chunk.js"
+  ]
+}
