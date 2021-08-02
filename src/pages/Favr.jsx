@@ -1,7 +1,11 @@
-import React from "react";
+import React, { useContext } from "react";
 import RowTable from "../components/RowTable/RowTable";
+import AppContext from "../context";
 
-const Favr = ({ favorites, onAddToFavorite }) => {
+const Favr = () => {
+  const {favorites} = useContext(AppContext)
+  const {onAddToFavorite} = useContext(AppContext)
+
   return (
     <div className="content p-40">
       <div className="d-flex align-center justify-between mb-40">
